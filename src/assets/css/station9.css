@@ -1,0 +1,89 @@
+@charset "UTF-8"
+body{
+	background-color: #C4c4c4;
+	/* 1200pxなど768px以上のとき */
+}
+
+header{
+	background-color: #ffffff;
+}
+
+footer{
+	background-color: #ffffff;
+}
+
+div{
+	background-color: #fff;
+}
+
+.card-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+@media screen and (max-width: 768px) {
+	.card-container{
+		justify-content: left;
+		flex-wrap: wrap;
+	}
+}
+
+
+.card{
+	padding: 2px;
+	width: max(25%,40%);
+	background-color: #fff;
+}
+@media screen and (max-width: 320px) {
+	.card{
+		width: 90%;
+	}
+}
+
+img{
+	margin-bottom: 2px;
+	
+}
+
+.card__img-top{
+	width: 100%;
+	height: auto;
+	alt: "explanation";
+}
+
+p{
+	color: #282828;
+}
+
+/* タイトル */
+.card__title{
+	font-size: 14px;
+}
+/* 説明 */
+.card__description{
+	font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+	/* タイトル */
+	.card__title{
+		font-size: 10px;
+	}
+	/* 説明 */
+	.card__description{
+		font-size: 8px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	/* タイトル */
+	.card__title{
+		font-size: 9px;
+	}
+	/* 説明 */
+	.card__description{
+		display: none;
+	}
+}
+
